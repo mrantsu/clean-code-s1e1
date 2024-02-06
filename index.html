@@ -9,40 +9,40 @@
 
 <body class="page">
   <header class="header">
-    <img class="header-poster" src="./eisenhower-matrix.jpg" alt="eisenhower matrix image">
+    <img class="poster" src="./eisenhower-matrix.jpg" alt="eisenhower matrix image">
     <a class="details-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main class="main">
-    <div id="add-task">
-      <label class="add-task__label" for="new-task">Add Item</label>
+    <div class="add-task">
+      <label class="section-title add-task__label" for="new-task">Add Item</label>
       <div class="task-wrapper">
         <input id="new-task" class="input-field" type="text">
-        <button class="btn-primary add-task-btn">Add</button>
+        <button class="btn-primary">Add</button>
       </div>
     </div>
     <h3 class="section-title">Todo</h3>
     <ul id="incomplete-tasks" class="tasks-list">
-      <li class="task-item">
-        <input class="task-checkbox" type="checkbox">
-        <label class="task-label">Pay Bills</label>
-        <input type="text" class="input-field">
+      <li class="tasks-list__item">
+        <input class="tasks-list__checkbox" type="checkbox">
+        <label class="tasks-list__label">Pay Bills</label>
+        <input type="text" class="tasks-list__input input-field">
         <button class="btn-primary edit-btn">Edit</button>
         <button class="btn-primary delete-btn"><img class="remove-icon" src="./remove.svg" alt="remove icon"></button>
       </li>
-      <li class="task-item edit-mode-task">
-        <input class="task-checkbox" type="checkbox">
-        <label class="task-label">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="input-field">
+      <li class="tasks-list__item edit--mode">
+        <input class="tasks-list__checkbox" type="checkbox">
+        <label class="tasks-list__label">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="tasks-list__input input-field">
         <button class="btn-primary edit-btn">Save</button>
         <button class="btn-primary delete-btn"><img class="remove-icon" src="./remove.svg" alt="remove icon"></button>
       </li>
     </ul>
     <h3 class="section-title">Completed</h3>
-    <ul id="completed-tasks" class="tasks-list">
-      <li class="task-item">
-        <input class="task-checkbox" type="checkbox" checked>
-        <label class="task-label">See the Doctor</label>
-        <input type="text" class="input-field">
+    <ul id="completed-tasks" class="tasks-list task--completed">
+      <li class="tasks-list__item">
+        <input class="tasks-list__checkbox" type="checkbox" checked>
+        <label class="tasks-list__label">See the Doctor</label>
+        <input type="text" class="tasks-list__input input-field">
         <button class="btn-primary edit-btn">Edit</button>
         <button class="btn-primary delete-btn"><img class="remove-icon" src="./remove.svg" alt="remove icon"></button>
       </li>
